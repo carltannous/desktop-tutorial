@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <!--localStorage.removeItem('key')-->
+    <!--localStorage.setItem('key','value')-->
+    <!--localStorage.getItem('key')-->
+    <form>
+        <textarea cols="20" rows="3" placeholder="write here" id="area">
+
+        </textarea>
+        <button onclick="localStorage.removeItem('ks');area.value=' '">clear</button>
+    </form>
+    <script>
+        'use strict';
+        area.oninput=function (){
+            localStorage.setItem('ks',area.value);
+        }
+        area.value=localStorage.getItem('ks');
+        area.onmouseout=function (){
+            area.style.background='red';
+            area.style.height=400+'px';
+
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
